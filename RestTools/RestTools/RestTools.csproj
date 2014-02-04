@@ -51,6 +51,7 @@
     <Folder Include="Scripts\" />
     <Folder Include="Views\Request\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Codes\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -58,6 +59,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\CodesController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -66,6 +68,7 @@
     <Content Include="Global.asax" />
     <Content Include="Views\Request\Dump.aspx" />
     <Content Include="Views\Shared\_NavMenu.aspx" />
+    <Content Include="Views\Codes\Codes.aspx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

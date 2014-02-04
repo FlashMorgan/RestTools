@@ -11,8 +11,9 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/Request/Dump">HTTP Dump</a></li>
+        <li><a href="/Codes/Codes">Status Codes</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->

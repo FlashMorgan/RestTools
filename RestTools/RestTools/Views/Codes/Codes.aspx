@@ -24,7 +24,21 @@
 
       <div class="starter-template">
         <h1><%= Html.Encode(ViewData["Message"]) %></h1>
-        <p class="lead">Tools for helping development with HTTP resources</p>
+		<div>
+		        <h3>1xx Informational</h3>
+		        <dl>
+				  <dt>100 Continue</dt>
+				  <dd>This means that the server has received the request headers, and that the client should proceed to send the request body</dd>
+				</dl>
+				<dl>
+				  <dt>101 Switching Protocols</dt>
+				  <dd>Server has acknowleged and switch protocols</dd>
+				</dl>
+				<dl>
+				  <dt>102 Processing</dt>
+				  <dd>The server has received and is processing the request, but no response is available yet</dd>
+				</dl>
+		</div>
       </div>
 
     </div><!-- /.container -->

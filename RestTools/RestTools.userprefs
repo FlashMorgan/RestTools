@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestTools/Controllers/RequestController.cs">
+    <Files>
+      <File FileName="RestTools/Views/Home/Index.aspx" Line="35" Column="59" />
+      <File FileName="RestTools/Controllers/HomeController.cs" Line="16" Column="4" />
+      <File FileName="RestTools/Controllers/RequestController.cs" Line="17" Column="5" />
+      <File FileName="RestTools/Views/Request/Dump.aspx" Line="49" Column="94" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
