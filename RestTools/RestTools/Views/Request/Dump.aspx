@@ -18,16 +18,27 @@
     <![endif]-->
 </head>
 <body>
-	<%: Html.Partial("_NavMenu") %>
+	<% Html.Partial("_NavMenu"); %>
 	<hr />
     <div class="container">
 
       <div class="starter-template">
          <div class="row">
 			<h1>HTTP Dump</h1>
-			<div class="input-group">
-			  <span class="input-group-addon">Headers</span>
-			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["Headers"]) %>">
+			<div class="well">
+			<h4>Headers</h4>
+			<%
+				string header = ViewData["Headers"].ToString();
+				foreach(string i in header.Split('&'))
+				{
+					string[] kvp = i.Split('=');
+					Response.Write(
+					"<div class='input-group'><span class='input-group-addon'>" + 
+					kvp[0] + 
+					"</span><input type='text' class='form-control' value='" +
+					kvp[1] + "'/></div>");
+				}
+			 %>
 			</div>
 			<div class="input-group">
 			  <span class="input-group-addon">Accepts</span>

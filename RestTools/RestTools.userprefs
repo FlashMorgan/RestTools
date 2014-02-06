@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="RestTools/Controllers/RequestController.cs">
     <Files>
-      <File FileName="RestTools/Views/Home/Index.aspx" Line="35" Column="59" />
-      <File FileName="RestTools/Controllers/HomeController.cs" Line="16" Column="4" />
-      <File FileName="RestTools/Controllers/RequestController.cs" Line="17" Column="5" />
-      <File FileName="RestTools/Views/Request/Dump.aspx" Line="49" Column="94" />
+      <File FileName="RestTools/Views/Shared/_NavMenu.aspx" Line="21" Column="7" />
+      <File FileName="RestTools/Views/Home/Index.aspx" Line="5" Column="12" />
+      <File FileName="RestTools/Controllers/RequestController.cs" Line="8" Column="20" />
+      <File FileName="RestTools/Views/Request/Dump.aspx" Line="35" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
