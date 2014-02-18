@@ -26,19 +26,31 @@
          <div class="row">
 			<h1>HTTP Dump</h1>
 			<div class="well">
-			<h4>Headers</h4>
-			<%
-				string header = ViewData["Headers"].ToString();
-				foreach(string i in header.Split('&'))
-				{
-					string[] kvp = i.Split('=');
-					Response.Write(
-					"<div class='input-group'><span class='input-group-addon'>" + 
-					kvp[0] + 
-					"</span><input type='text' class='form-control' value='" +
-					kvp[1] + "'/></div>");
-				}
-			 %>
+				<h4>Headers</h4>
+				<%
+					string header = ViewData["Headers"].ToString();
+					foreach(string i in header.Split('&'))
+					{
+						string[] kvp = i.Split('=');
+						Response.Write(
+						"<div class='input-group'><span class='input-group-addon'>" + 
+						kvp[0] + 
+						"</span><input type='text' class='form-control' value='" +
+						kvp[1] + "'/></div>");
+					}
+				 %>
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon">HTTP Method</span>
+			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["Method"]) %>">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon">Query String</span>
+			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["QueryString"]) %>">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon">Forms</span>
+			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["Forms"]) %>">
 			</div>
 			<div class="input-group">
 			  <span class="input-group-addon">Accepts</span>
@@ -57,16 +69,16 @@
 			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["ContentLength"]) %>">
 			</div>
 			<div class="input-group">
-			  <span class="input-group-addon">Path</span>
-			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["Path"]) %>">
-			</div>
-			<div class="input-group">
 			  <span class="input-group-addon">User Host Address</span>
 			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["UserHostAddress"]) %>">
 			</div>
 			<div class="input-group">
 			  <span class="input-group-addon">User Host Name</span>
 			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["UserHostName"]) %>">
+			</div>
+			<div class="input-group">
+			  <span class="input-group-addon">Params</span>
+			  <input type="text" class="form-control" value="<%= Html.Encode(ViewData["Paramss"]) %>">
 			</div>
 		</div>
       </div>

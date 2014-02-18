@@ -18,12 +18,14 @@ namespace RestTools
 				accept = i + " ";
 			}
 
+			ViewData ["Method"] = HttpContext.Request.HttpMethod;
+			ViewData ["QueryString"] = HttpContext.Request.QueryString;
 			ViewData ["Headers"] = Request.Headers;
+			ViewData ["Form"] = Request.Form;
+			ViewData ["Paramss"] = Request.Params;
 			ViewData ["Accepts"] = accept;
-			ViewData ["AnonymousID"] = HttpContext.Request.AnonymousID;
-			ViewData ["Browser"] = HttpContext.Request.Browser.Platform;
+			ViewData ["Browser"] = HttpContext.Request.Browser.Id;
 			ViewData ["ContentLength"] = HttpContext.Request.ContentLength;
-			ViewData ["Path"] = HttpContext.Request.Path;
 			ViewData ["UserHostAddress"] = HttpContext.Request.UserHostAddress;
 			ViewData ["UserHostName"] = HttpContext.Request.UserHostName;
 
